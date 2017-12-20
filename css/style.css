@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans Condensed', sans-serif;
+    background: url('../img/bgc2.jpg') no-repeat fixed;
+    background-size: cover;
+    
+
+   
+}
+
+.header {
+    margin-top: 15px;
+    height: 50px;
+   
+}
+
+.nav {
+
+    
+    padding: 0 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    line-height: 50px;
+    list-style: none;
+}
+
+.nav li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-right: 10px;
+    padding: 5px;
+   
+}
+
+.nav li a:hover {
+     border: 2px solid rgb(222,30,88);
+    border-radius: 3px;
+    -webkit-transition:  all .1s ease-in-out 0s;
+    -o-transition:  all .1s ease-in-out 0s;
+    transition:  all .1s ease-in-out 0s;
+}
+
+
+
+.home {
+    flex-grow: 2;
+}
+.logo {
+    display: block;
+    margin: 0 auto;
+    width: 50px;
+    -webkit-filter: drop-shadow(0 0  10px rgb(222,30,88));
+    -o-filter: drop-shadow(0 0  10px rgb(222,30,88));
+    filter: drop-shadow(0 0  10px rgb(222,30,88));
+}
+.flex {
+    width: 1040px;
+    margin: 0 auto;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.flex .container{
+  
+    display: inline-block;
+    margin: 40px 20px;
+}
+.container {
+    
+    text-align: center;
+    font-size: 1.5em;
+    
+}
+.image {
+    padding: 0;
+}
+
+.container .name, .container .price {
+    color: #fff;
+    font-size: 1.3em;
+}
+.container .image:hover {
+    transform: scale(1.2);
+    -webkit-transition: all .5s ease-in-out .1s;
+    -o-transition: all .5s ease-in-out .1s;
+    transition: all .5s ease-in-out .1s;
+    
+}
+
+.container .image img:hover {
+    box-shadow: 0 0 15px 2px #fff;
+}
+
+.buy {
+    margin: 0 auto;
+    display: block;
+    text-decoration: none;
+    width: 100px;
+    height: 48px;
+    text-align: center;
+    background: aqua;
+    line-height: 48px;
+    color: #fff;
+    border: 2px solid aqua;
+}
+
+.buy:hover {
+    height: 48px;
+    border: 2px solid aqua;
+    background: #fff;
+    color: aqua;
+    transition: all .1s ease-in-out 0s;
+}
+
+
+form {
+    padding: 0;
+    width: 300px;
+    margin: 40px auto;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: bold;
+}
+input {
+    display: block;
+    border: 2px solid #cccccc;
+    border-radius: 3px; 
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    /* background: rgb(222,30,88);*/
+    outline: none;
+    height: 50px; 
+    color: #cccccc; 
+    font-size: 11px; 
+     font-family: 'Open Sans Condensed', sans-serif;
+     font-weight: bold;
+    width: 300px;
+    text-align: center;
+    font-size: 1.3em;
+    color: #000;
+    margin: 5px 0;
+
+}
+
+input:hover {
+    background: rgba(0,0,0, .0);
+    border: 2px solid rgb(222,30,88); 
+}
+
+input[type="submit"] {
+    width: 302px;
+    margin-top: 50px;
+     font-family: 'Open Sans Condensed', sans-serif;
+     font-weight: bold;
+
+    
+}
+
+
+input[type="submit"]:hover {
+    color: white;
+    /*background: aqua!important;*/
+    cursor: pointer;
+}
+
+.add {
+    line-height: 3em;
+    text-align: center;
+    font-size: 2em;
+    color: #fff;
+}
+
+.back {
+    color: #fff;
+    margin: 0 auto;
+    display: block;
+    width: 200px;
+    font-size: 2em;
+    text-decoration: none;
+    text-align: center;
+    
+    padding: 10px;
+
+}
+
+.back:hover {
+    border: 2px solid rgb(222,30,88);
+}
+
+.contacts {
+    padding: 5px;
+}
+.contacts h1, .contacts p {
+    text-align: center;
+    color: #fff;
+}
+
+.contacts p {
+    font-size: 1.5em;
+}
+.contacts iframe {
+    display: block;
+    margin: 0 auto;
+    /*width: 700px;*/
+    border: 2px solid #fff;
+    box-shadow: 0 0 15px 2px #fff;
+}
+
+hr {
+    color: rgb(222,30,88);
+}
+@media (max-width: 450px) {
+    .flex {
+        width: auto;
+        justify-content: center;
+    }
+
+    .nav li a {
+        font-weight: 400;
+    }
+
+    .back {
+        width: 200px;
+        
+    }
+
+    iframe {
+        display: block;
+        width: 300px;
+    }
+}
